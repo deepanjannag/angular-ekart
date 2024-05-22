@@ -21,5 +21,8 @@
         <div class="ekart--product--available-colors">
           {{product.color.length}} Colors . Best Seller
         </div>
+        <div class="ekart--product--in--stock" [ngStyle]="{'color': product.is_in_inventory ? 'green' : 'red', 'font-weight': 'bold'}">
+          {{product.is_in_inventory ? 'In Stock' : 'Not Available'}}
+        </div>
     </div> 
 </div>
