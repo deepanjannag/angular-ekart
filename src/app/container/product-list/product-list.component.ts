@@ -187,4 +187,11 @@ export class ProductListComponent {
   totalProducts = this.products.length;
   inStockProducts = this.products.filter((p) => p.is_in_inventory).length;
   outOfStockProducts = this.products.filter((p) => !p.is_in_inventory).length;
+
+  selectedFilterRadioButton: string = 'all';
+
+  onFilterChanged(value: string) {
+    console.log('Value is: ' + value);
+    this.selectedFilterRadioButton = value;
+  }
 }
