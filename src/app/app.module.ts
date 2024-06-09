@@ -13,9 +13,10 @@ import { ProductListComponent } from './container/product-list/product-list.comp
 import { ProductComponent } from './container/product-list/product/product.component';
 import { FilterComponent } from './container/product-list/filter/filter.component';
 import { ProductDetailComponent } from './container/product-detail/product-detail.component';
+import { FeaturedBrandsComponent } from './container/featured-brands/featured-brands.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, TopHeaderComponent, TopMenuComponent, MainMenuComponent, ContainerComponent, SearchComponent, ProductListComponent, ProductComponent, FilterComponent, ProductDetailComponent],
+  declarations: [AppComponent, HeaderComponent, TopHeaderComponent, TopMenuComponent, MainMenuComponent, ContainerComponent, SearchComponent, ProductListComponent, ProductComponent, FilterComponent, ProductDetailComponent, FeaturedBrandsComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

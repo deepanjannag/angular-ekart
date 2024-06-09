@@ -10,5 +10,5 @@
   "prettier.printWidth": 200,
   "amazonQ.importRecommendationForInlineCodeSuggestions": false,
   "amazonQ.showInlineCodeSuggestionsWithCodeReferences": false,
-  "amazonQ.telemetry": true
+  "amazonQ.telemetry": false
 }
