@@ -11,9 +11,15 @@
       <h2>{{ product.name }}</h2>
     </div>
     <div class="ekart-product-detail-gbc">
-      <span appSetBackground>{{ product.gender }}</span>
-      <span appSetBackground>{{ product.brand }}</span>
-      <span appSetBackground>{{ product.category }}</span>
+      <span [appSetBackground]="{ backColor: 'blue', textColor: 'white' }">{{
+        product.gender
+      }}</span>
+      <span [appSetBackground]="{ backColor: 'black', textColor: 'yellow' }">{{
+        product.brand
+      }}</span>
+      <span [appSetBackground]="{ backColor: 'pink', textColor: 'white' }">{{
+        product.category
+      }}</span>
     </div>
     <div class="ekart-product-detail-price">
       <p>

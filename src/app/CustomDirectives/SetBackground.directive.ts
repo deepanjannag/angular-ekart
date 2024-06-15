@@ -1,25 +1,26 @@
-import { Directive, ElementRef, OnInit, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, Input, OnInit, Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[appSetBackground]',
 })
 export class SetBackground implements OnInit {
-  //private element: ElementRef;
-  //private renderer: Renderer2;
-  constructor(private element: ElementRef, private renderer: Renderer2) {
-    //this.element = element;
-    //this.renderer=renderer;
-  }
+  @Input('appSetBackground')
+  changeTextAndBackgroundColor: { backColor: string; textColor: string };
+
+  constructor(private element: ElementRef, private renderer: Renderer2) {}
 
   ngOnInit() {
     //this.element.nativeElement.style.backgroundColor = 'red';
-
     this.renderer.setStyle(
       this.element.nativeElement,
       'background-color',
-      'blue'
+      this.changeTextAndBackgroundColor.backColor
     );
 
-    this.renderer.setStyle(this.element.nativeElement, 'color', 'yellow');
+    this.renderer.setStyle(
+      this.element.nativeElement,
+      'color',
+      this.changeTextAndBackgroundColor.textColor
+    );
   }
 }
