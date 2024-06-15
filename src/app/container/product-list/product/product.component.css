@@ -65,3 +65,8 @@
   font-size: 14px;
   margin-top: 10px;
 }
+
+.disable-out-of-stock-product {
+  background-color: #28282b;
+  opacity: 0.5;
+}
